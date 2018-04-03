@@ -34,7 +34,7 @@ export default {
   },
   methods: {
     createPost () {
-      this.$http.post('http://jsonplaceholder.typicode.com/posts', {
+      this.$http.post('posts', {
         title: this.postTitle,
         body: this.postBody
       }).then((response) => {})
